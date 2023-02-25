@@ -18,18 +18,18 @@ import matplotlib
 def draw_a_candy(x,y,c,s):
     # This is used to draw a custom symbol
     plt.scatter(x, y, marker='o', \
-                c='black', s=s*1.3, cmap='plasma')
+                color='black', s=s*1.3, cmap='plasma')
     plt.scatter(x+1, y, marker='<', \
-                c='black', s=s*1.3, cmap='plasma')
+                color='black', s=s*1.3, cmap='plasma')
     plt.scatter(x-1, y, marker='>', \
-                c='black', s=s*1.3, cmap='plasma')
+                color='black', s=s*1.3, cmap='plasma')
 
     plt.scatter(x, y, marker='o', \
-                c=c, s=s, cmap='plasma')
+                color=c, s=s, cmap='plasma')
     plt.scatter(x+1, y, marker='<', \
-                c=c, s=s, cmap='plasma')
+                color=c, s=s, cmap='plasma')
     plt.scatter(x-1, y, marker='>', \
-                c=c, s=s, cmap='plasma')
+                color=c, s=s, cmap='plasma')
 
 def check_price_and_sugar(tbl):
     # Get the correlation between all columns in the table
