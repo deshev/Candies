@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Feb 25 20:15:27 2023
-@author: tazio
+@author: BD
 
 Add the columns with the color to the main table
 Those columns were created manually
