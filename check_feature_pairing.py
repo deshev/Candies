@@ -11,7 +11,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-path = '/home/tazio/works/2023/LDLAssignment/'
+path = ''
 # Read in the table
 tbl = pd.read_csv(path+'candy_data_extended.csv')
 # We check those separately so they are not needed here
