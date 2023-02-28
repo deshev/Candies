@@ -10,7 +10,7 @@ Those columns were created manually
 
 import pandas as pd
 
-path = '/home/tazio/works/2023/LDLAssignment/'
+path = ''
 
 # Open the main data table 
 tbl = pd.read_csv(path+'candy-data.csv')

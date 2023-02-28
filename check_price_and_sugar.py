@@ -5,7 +5,7 @@ Created on Sat Feb 25 12:53:08 2023
 @author: BD
 
 - Check if the sugar content and the price define how often a given candy is
-chosen when compared with one other candy from the list (85 in total)
+    chosen
 - Plot the results
 
 """
@@ -52,7 +52,9 @@ def check_price_and_sugar(tbl):
     p_line = np.poly1d(fit)
 
     # Initiate the figure
-    plt.figure(figsize=(10,5))
+    plt.figure(figsize=(10,4))
+    
+    # First deal with sugar content
     ax1 = plt.subplot(1,2,1)
     
     # Plot the correlation line
@@ -74,7 +76,8 @@ def check_price_and_sugar(tbl):
     ax1.legend(loc=2)
     ax1.tick_params(axis='both', direction='in', which='both', right='on', top='on')
 
-###
+### Deal with the price
+
     # Fit a straight line between price percent and win percent (all points)
     fit = np.polyfit(x=tbl['pricepercent'], y=tbl['winpercent'], deg=1)
     p_line_all = np.poly1d(fit)
@@ -124,7 +127,7 @@ def check_price_and_sugar(tbl):
 
 
 if __name__ == '__main__':
-    path = '/home/tazio/works/2023/LDLAssignment/'
+    path = ''
     # Read in the table
     tbl = pd.read_csv(path+'candy_data_extended.csv')
     
